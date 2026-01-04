@@ -7,10 +7,11 @@ trips = [['france', 'germany', 'italy', 'spain', 'netherlands', 'sweden', 'norwa
 
 # List of all countries 
 countries = []
-
+countries = [country.capitalize() for trip in trips for country in trip]
+"""
 for trip in trips:
-    for country in trip:
-        
+    for country in trip: 
         countries.append(country.capitalize())
+"""        
 # Testing
 print('List of Countries:', countries)
